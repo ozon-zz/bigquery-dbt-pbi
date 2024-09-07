@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: mkt
+    description: Bigquery source
+    tables:
+      - name: traffics
+        description: traffics data

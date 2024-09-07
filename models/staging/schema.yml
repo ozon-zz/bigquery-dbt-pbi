@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_traffics
+    description: "Table containing raw data with initial headers and values."
+    columns:
+      - name: Date
+        description: "Date field in the raw data."
+      - name: Source
+        description: "Source field in the raw data."
+      - name: Site
+        description: "Site field in the raw data."
+      - name: Traffics
+        description: "Traffics field in the raw data."
+      - name: New_Users
+        description: "New Users field in the raw data."
+      - name: Returning_Users
+        description: "Returning Users field in the raw data."
+    tests:
+      - not_null:
+          column_name: Date
+      - not null:
+          column_name: Source
